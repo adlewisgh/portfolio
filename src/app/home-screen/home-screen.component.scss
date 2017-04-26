@@ -1,18 +1,16 @@
 .row {
     height: 100%;
     width: 100%;
-    // background-color: blue;
     margin-left: 0px;
   }
 
-
-.mockup{
-  display: inline-block;
-  height: 400px;
-  width: 300px;
-  margin-top: 25px;
+.mockup {
+  margin: auto;
+  height: 100%;
+  width:100%;
+  // margin-top: 25px;
   margin-bottom: 25px;
-  margin-left: 25px;
+  // margin-left: 25px;
   border: 1px solid black;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,13 +18,13 @@
 
 .toggle-carousel{
   display: inline-block;
-  border: 1px solid white;
+  border: 1px solid grey;
   width: 50px;
   height: 10px;
   margin-left: -1px;
   border-radius: 10px;
   &.active {
-    background-color: white;
+    background-color: grey;
   }
 }
 
@@ -34,39 +32,42 @@
   margin-left: 412px;
   height: 20px;
   width: 155px;
-  margin-top: -5px;
-}
-
-.cycle-left{
-  position: absolute;
-  color: white;
-  size: 20px;
-  top: 280px;
-  left: 200px;
+  // margin-top: -5px;
+  float: left;
+  margin-top: 3px;
+  margin-left: 447px;
+  // background-color: red;
 }
 
 .inner-screen {
-  position: absolute;
-  // margin: auto;
-  left: 220px;
+  margin: auto;
   margin-top:25px;
   height: 500px;
-  width: 1000px;
+  width: 95%;
   background-color: black;
   border-radius: 10px;
 }
 
 .outer-screen{
-  display: block;
   margin: auto;
+  padding-top: 1px;
   background-color: white;
   height: 550px;
-  width: 1050px;
+  width: 100%;
   border-radius: 10px;
 }
 
 // .background-container{
-//   // background-color: green;
+//   // display: block;
+//   background-color: green;
+//   margin-top: 1.5%;
+//   width: 100%;
+//   padding-left: 0px;
+//   padding-right: 0px;
+//   margin-left: 0px;
+//   // margin-right: 0px;
+//   // margin: auto;
+//   // margin-left: -1%;
 // }
 
 .power-button {
@@ -75,12 +76,11 @@
   border-radius: 10px;
   background-color: gray;
   float: right;
-  margin-top: 531px;
+  margin-top: 10px;
   margin-right: 50px;
 }
 
 .stand-leg-left {
-  margin-left: 600px;
   height: 125px;
   width: 90px;
   background-color: white;
@@ -89,7 +89,7 @@
 }
 
 .stand-leg-right {
-  margin-left: 700px;
+  margin-left: 100px;
   margin-top: -125px;
   height: 125px;
   width: 90px;
@@ -99,9 +99,53 @@
 }
 
 .stand-base {
+  margin: auto;
   height: 50px;
   width: 500px;
   border-radius: 100px;
   background-color: white;
-  margin-left: 440px;
 }
+
+.leg-container {
+  margin: auto;
+  width: 190px;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  margin-top: 1.5%;
+}
+
+.wrapper {
+  background-color: blue;
+  width: 1050px;
+  margin: auto;
+  display: inline-block;
+}
+
+span {
+  position: relative;
+  bottom: 150px;
+  color: white;
+  font-size: 100px;
+  border: 1px solid black;
+  // margin-top: -500px;
+  height: 100px;
+  width: 50px;
+  background-color: red;
+}
+
+.content-container{
+  margin: auto;
+  background-color: yellow;
+  width: 62.6%;
+  margin-bottom: 25px;
+  margin-top: 1.5%;
+}
+
+// h5{
+//   -webkit-text-stroke: 2px red;
+//   font-size: 50px;
+// }

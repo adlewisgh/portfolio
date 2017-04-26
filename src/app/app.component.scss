@@ -1,6 +1,35 @@
 .container{
-  position: fixed;
+  // display: inline-block;
   background-color: gray;
   height: 100%;
-  width: 100%
+  width: 100%;
+  // padding-left: 0px;
+  // padding-right: 0px;
+  // margin-left: 0px;
+}
+
+.row{
+  background-color: white;
+  height: 100px;
+  a{
+    color: black;
+    font-size: 30px;
+    &.active{
+    }
+  }
+
+  .link {
+    display: inline-block;
+    // border: 1px solid black;
+    &.active{
+      border-bottom: 1px solid black;
+    }
+  }
+
+  .link-container {
+    margin: auto;
+    margin-top: 1.5%;
+    // background-color: pink;
+    width: 10.5%;
+  }
 }

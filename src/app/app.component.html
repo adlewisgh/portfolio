@@ -1,5 +1,13 @@
 <div class="container">
-  <a [routerLink] = "['home']">Home</a>
-  <a [routerLink] = "['projects']">Projects</a>
+  <div class="row">
+    <div class="link-container">
+    <div class="link">
+      <a [routerLink]="['home']" routerLinkActive="active">Home</a>
+    </div>
+    <div class="link">
+      <a [routerLink]="['projects']" routerLinkActive="active">Projects</a>
+    </div>
+    </div>
+  </div>
   <router-outlet></router-outlet>
 </div>
