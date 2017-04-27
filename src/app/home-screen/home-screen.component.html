@@ -1,49 +1,49 @@
 <!--<div class="background-container">-->
-  <div class="content-container">
-  <span><</span>
-  <div class="wrapper">
-<div class="outer-screen">
-<div class="inner-screen">
-  <div class="row" *ngIf="array1">
-    <div class="mockup" [style.backgroundImage]="'url('+(projectArray1[i].image)+')'" *ngFor="let project of projectArray1; let i = index"></div>
-    <!--<div class="button-row">
+<div class="content-container">
+  <div class="cycle-buttons cycle-button-left">
+    <</div>
+      <div class="wrapper">
+        <div class="outer-screen">
+          <div class="inner-screen">
+            <div class="row" *ngIf="array1">
+              <div class="mockup" [style.backgroundImage]="'url('+(projectArray1[i].image)+')'" *ngFor="let project of projectArray1; let i = index"></div>
+              <!--<div class="button-row">
   <div class="toggle-carousel" (click)="toggleCarousel1()" [class.active]="array1"></div>
   <div class="toggle-carousel" (click)="toggleCarousel2()" [class.active]="array2"></div>
   <div class="toggle-carousel" (click)="toggleCarousel3()" [class.active]="array3"></div>
   </div>-->
-  </div>
-    <div class="row" *ngIf="array2">
-    <div class="mockup" [style.backgroundImage]="'url('+(projectArray2[i].image)+')'" *ngFor="let project of projectArray2; let i = index"></div>
-    <!--<div class="button-row">
+            </div>
+            <div class="row" *ngIf="array2">
+              <div class="mockup" [style.backgroundImage]="'url('+(projectArray2[i].image)+')'" *ngFor="let project of projectArray2; let i = index"></div>
+              <!--<div class="button-row">
   <div class="toggle-carousel" (click)="toggleCarousel1()" [class.active]="array1"></div>
   <div class="toggle-carousel" (click)="toggleCarousel2()" [class.active]="array2"></div>
   <div class="toggle-carousel" (click)="toggleCarousel3()" [class.active]="array3"></div>
   </div>-->
-  </div>
-    <div class="row" *ngIf="array3">
-    <div class="mockup" [style.backgroundImage]="'url('+(projectArray3[i].image)+')'" *ngFor="let project of projectArray3; let i = index"></div>
-    <!--<div class="button-row">
+            </div>
+            <div class="row" *ngIf="array3">
+              <div class="mockup" [style.backgroundImage]="'url('+(projectArray3[i].image)+')'" *ngFor="let project of projectArray3; let i = index"></div>
+              <!--<div class="button-row">
   <div class="toggle-carousel" (click)="toggleCarousel1()" [class.active]="array1"></div>
   <div class="toggle-carousel" (click)="toggleCarousel2()" [class.active]="array2"></div>
   <div class="toggle-carousel" (click)="toggleCarousel3()" [class.active]="array3"></div>
   </div>-->
-  </div>
-</div>
- <div class="button-row">
-  <div class="toggle-carousel" (click)="toggleCarousel1()" [class.active]="array1"></div>
-  <div class="toggle-carousel" (click)="toggleCarousel2()" [class.active]="array2"></div>
-  <div class="toggle-carousel" (click)="toggleCarousel3()" [class.active]="array3"></div>
-  </div>
-<div class="power-button"></div>
-</div>
-<div class=leg-container>
-<div class="stand-leg-left"></div>
-<div class="stand-leg-right"></div>
-</div>
+            </div>
+          </div>
+          <div class="button-row">
+            <div class="toggle-carousel" (click)="toggleCarousel1()" [class.active]="array1"></div>
+            <div class="toggle-carousel" (click)="toggleCarousel2()" [class.active]="array2"></div>
+            <div class="toggle-carousel" (click)="toggleCarousel3()" [class.active]="array3"></div>
+          </div>
+          <div class="power-button"></div>
+        </div>
+        <div class="hidden-sm hidden-xs leg-container">
+          <div class="hidden-sm hidden-xs stand-leg-left"></div>
+          <div class="hidden-sm hidden-xs stand-leg-right"></div>
+        </div>
 
-<div class="stand-base"></div>
-<!--<div class="footer"></div>-->
-</div>
-<span>></span>
-</div>
-<!--</div>-->
+        <div class="hidden-sm hidden-xs stand-base"></div>
+        <!--<div class="footer"></div>-->
+      </div>
+      <div class="cycle-buttons cycle-button-right">></div>
+  </div>
