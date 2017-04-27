@@ -1,41 +1,29 @@
-<!--<div class="background-container">-->
 <div class="content-container">
   <div class="cycle-buttons cycle-button-left">
-    <</div>
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </div>
       <div class="wrapper">
         <div class="outer-screen">
           <div class="inner-screen">
-            <div class="row" *ngIf="array1">
+            <div class="row" *ngIf="array1 && power">
               <div class="mockup" [style.backgroundImage]="'url('+(projectArray1[i].image)+')'" *ngFor="let project of projectArray1; let i = index"></div>
-              <!--<div class="button-row">
-  <div class="toggle-carousel" (click)="toggleCarousel1()" [class.active]="array1"></div>
-  <div class="toggle-carousel" (click)="toggleCarousel2()" [class.active]="array2"></div>
-  <div class="toggle-carousel" (click)="toggleCarousel3()" [class.active]="array3"></div>
-  </div>-->
             </div>
-            <div class="row" *ngIf="array2">
+            <div class="row" *ngIf="array2 && power">
               <div class="mockup" [style.backgroundImage]="'url('+(projectArray2[i].image)+')'" *ngFor="let project of projectArray2; let i = index"></div>
-              <!--<div class="button-row">
-  <div class="toggle-carousel" (click)="toggleCarousel1()" [class.active]="array1"></div>
-  <div class="toggle-carousel" (click)="toggleCarousel2()" [class.active]="array2"></div>
-  <div class="toggle-carousel" (click)="toggleCarousel3()" [class.active]="array3"></div>
-  </div>-->
             </div>
-            <div class="row" *ngIf="array3">
+            <div class="row" *ngIf="array3 && power">
               <div class="mockup" [style.backgroundImage]="'url('+(projectArray3[i].image)+')'" *ngFor="let project of projectArray3; let i = index"></div>
-              <!--<div class="button-row">
-  <div class="toggle-carousel" (click)="toggleCarousel1()" [class.active]="array1"></div>
-  <div class="toggle-carousel" (click)="toggleCarousel2()" [class.active]="array2"></div>
-  <div class="toggle-carousel" (click)="toggleCarousel3()" [class.active]="array3"></div>
-  </div>-->
             </div>
           </div>
-          <div class="button-row">
+          <div class="button-row hidden-sm hidden-xs">
             <div class="toggle-carousel" (click)="toggleCarousel1()" [class.active]="array1"></div>
             <div class="toggle-carousel" (click)="toggleCarousel2()" [class.active]="array2"></div>
             <div class="toggle-carousel" (click)="toggleCarousel3()" [class.active]="array3"></div>
           </div>
-          <div class="power-button"></div>
+          <div class="hidden-sm hidden-xs power-button" (click)="togglePower()"></div>
+          <div class="ipad-power" (click)="togglePower()">
+            <i class="fa fa-power-off" aria-hidden="true" [class.active]="power"></i>
+          </div>
         </div>
         <div class="hidden-sm hidden-xs leg-container">
           <div class="hidden-sm hidden-xs stand-leg-left"></div>
@@ -45,5 +33,7 @@
         <div class="hidden-sm hidden-xs stand-base"></div>
         <!--<div class="footer"></div>-->
       </div>
-      <div class="cycle-buttons cycle-button-right">></div>
+      <div class="cycle-buttons cycle-button-right">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </div>
   </div>
